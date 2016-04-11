@@ -58,6 +58,6 @@ iOS提供的默认kCAFillMode一共有四种
 ## CAKeyframeAnimation  
 
 Demo里的动画有这些。  
-![](http://7xi4jm.com1.z0.glb.clouddn.com/animationCollection.gif)
+![](http://7xi4jm.com1.z0.glb.clouddn.com/animationCollection2.gif)
 
 
