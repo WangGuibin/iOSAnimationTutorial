@@ -74,4 +74,13 @@ static CGFloat const kAnimationDuration = 1;
     return animation;
 }
 
++ (CABasicAnimation *)shapePathAnimationWithFromPath:(UIBezierPath *)fromPath toPath:(UIBezierPath *)toPath reverse:(BOOL)isReverse
+{
+    if (isReverse) {
+        return [CABasicAnimationDemo animationWithKeyPath:@"path" duration:kAnimationDuration fromValue:(id)fromPath.CGPath toValue:(id)toPath.CGPath];
+    }else{
+        return [CABasicAnimationDemo animationWithKeyPath:@"path" duration:kAnimationDuration fromValue:(id)toPath.CGPath toValue:(id)fromPath.CGPath];
+    }
+}
+
 @end

@@ -38,5 +38,13 @@ FOUNDATION_EXPORT NSString * const kZAxisTransform;
                                      withPerspective:(BOOL)isPerspective;
 
 
+/**
+ Path形变动画，演示如何配合maskLayer转换贝塞尔曲线
+ */
+
++ (CABasicAnimation *)shapePathAnimationWithFromPath:(UIBezierPath *)fromPath
+                                         toPath:(UIBezierPath *)toPath
+                                        reverse:(BOOL)isReverse;
+
 
 @end

@@ -159,6 +159,8 @@
                         <segue destination="qWm-GI-aRd" kind="show" identifier="kShowGroup" id="UdF-oO-S3D"/>
                         <segue destination="Oyz-zv-hQX" kind="show" identifier="kShowCellAnimation" id="8tt-iJ-H7v"/>
                         <segue destination="phM-Bp-Z4V" kind="show" identifier="kShowTransform" id="hVz-zi-AYW"/>
+                        <segue destination="ejg-7c-JZn" kind="show" identifier="kShowFillModeVC" id="3m9-tc-Hen"/>
+                        <segue destination="5DK-jh-Zh1" kind="show" identifier="kShowPath" id="vI2-Oe-YNb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5C-5B-2iL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -195,6 +197,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5k-qz-AaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="77" y="2518"/>
+        </scene>
+        <!--Fill Mode View Controller-->
+        <scene sceneID="PAv-eM-fXs">
+            <objects>
+                <viewController id="ejg-7c-JZn" customClass="FillModeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Pb-F8-1If"/>
+                        <viewControllerLayoutGuide type="bottom" id="3iW-ks-xTC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GRx-Og-CPR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiS-BC-bex">
+                                <rect key="frame" x="15" y="550" width="165" height="30"/>
+                                <state key="normal" title="startBackwardsFillMode"/>
+                                <connections>
+                                    <action selector="startBackWardFillMode:" destination="ejg-7c-JZn" eventType="touchUpInside" id="bPR-Hx-ppO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gO-jl-fG0">
+                                <rect key="frame" x="426" y="550" width="154" height="30"/>
+                                <state key="normal" title="startForwardsFillMode"/>
+                                <connections>
+                                    <action selector="startForWardFillMode:" destination="ejg-7c-JZn" eventType="touchUpInside" id="0D5-aH-2Qk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3iW-ks-xTC" firstAttribute="top" secondItem="1gO-jl-fG0" secondAttribute="bottom" constant="20" id="8j3-bZ-ukW"/>
+                            <constraint firstItem="3iW-ks-xTC" firstAttribute="top" secondItem="NiS-BC-bex" secondAttribute="bottom" constant="20" id="9IK-o9-tkG"/>
+                            <constraint firstAttribute="trailing" secondItem="1gO-jl-fG0" secondAttribute="trailing" constant="20" id="HYM-Bs-xLZ"/>
+                            <constraint firstItem="NiS-BC-bex" firstAttribute="leading" secondItem="GRx-Og-CPR" secondAttribute="leading" constant="15" id="bFX-DV-dIA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcd-nh-69B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="4034"/>
+        </scene>
+        <!--Path Animation View Controller-->
+        <scene sceneID="TfF-eq-11a">
+            <objects>
+                <viewController id="5DK-jh-Zh1" customClass="PathAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8s6-Md-X2W"/>
+                        <viewControllerLayoutGuide type="bottom" id="cQL-zF-y22"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vg5-Z3-Zay">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFC-td-sYO">
+                                <rect key="frame" x="234" y="550" width="132" height="30"/>
+                                <state key="normal" title="startPathAnimation"/>
+                                <connections>
+                                    <action selector="startPathAnimation:" destination="5DK-jh-Zh1" eventType="touchUpInside" id="ZBe-hU-wdu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cQL-zF-y22" firstAttribute="top" secondItem="HFC-td-sYO" secondAttribute="bottom" constant="20" id="Xbc-kt-bRJ"/>
+                            <constraint firstItem="HFC-td-sYO" firstAttribute="centerX" secondItem="vg5-Z3-Zay" secondAttribute="centerX" id="ukn-N2-DI1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Il9-tt-D2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="4737"/>
         </scene>
         <!--Cell Animation View Controller-->
         <scene sceneID="6Cc-1H-zry">
@@ -252,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ow-ij-mwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77" y="3263"/>
+            <point key="canvasLocation" x="297" y="3227"/>
         </scene>
         <!--Transform View Controller-->
         <scene sceneID="KVh-y0-UyZ">

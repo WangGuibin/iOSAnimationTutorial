@@ -27,6 +27,8 @@
 		40263F511CBA801B00D07F00 /* PGCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40263F501CBA801B00D07F00 /* PGCardTableViewCell.m */; };
 		40263F531CBA802900D07F00 /* 5th-row@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40263F521CBA802900D07F00 /* 5th-row@2x.png */; };
 		40263F561CBA82EC00D07F00 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40263F551CBA82EC00D07F00 /* HomeTableViewController.m */; };
+		40263F9F1CBB74B000D07F00 /* FillModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40263F9E1CBB74B000D07F00 /* FillModeViewController.m */; };
+		40263FA21CBB802100D07F00 /* PathAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40263FA11CBB802100D07F00 /* PathAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,10 @@
 		40263F521CBA802900D07F00 /* 5th-row@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5th-row@2x.png"; sourceTree = "<group>"; };
 		40263F541CBA82EC00D07F00 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		40263F551CBA82EC00D07F00 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		40263F9D1CBB74B000D07F00 /* FillModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillModeViewController.h; sourceTree = "<group>"; };
+		40263F9E1CBB74B000D07F00 /* FillModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillModeViewController.m; sourceTree = "<group>"; };
+		40263FA01CBB802100D07F00 /* PathAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathAnimationViewController.h; sourceTree = "<group>"; };
+		40263FA11CBB802100D07F00 /* PathAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,16 +194,10 @@
 		40263F341CBA67C300D07F00 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				40263F351CBA6AEF00D07F00 /* ShadowViewController.h */,
-				40263F361CBA6AEF00D07F00 /* ShadowViewController.m */,
-				40263F3B1CBA73E900D07F00 /* TransformViewController.h */,
-				40263F3C1CBA73E900D07F00 /* TransformViewController.m */,
-				40263F411CBA78CB00D07F00 /* MaskAnimationViewController.h */,
-				40263F421CBA78CB00D07F00 /* MaskAnimationViewController.m */,
-				40263F481CBA7FA300D07F00 /* SequenceAnimationViewController.h */,
-				40263F491CBA7FA300D07F00 /* SequenceAnimationViewController.m */,
-				40263F4B1CBA7FEB00D07F00 /* CellAnimationViewController.h */,
-				40263F4C1CBA7FEB00D07F00 /* CellAnimationViewController.m */,
+				40263FA31CBB864900D07F00 /* CAKeyframeAnimation */,
+				40263F9C1CBB748E00D07F00 /* AdvancedAnimationSample */,
+				40263F9B1CBB748500D07F00 /* CAGroupAninaitonVC */,
+				40263F9A1CBB746C00D07F00 /* CABasicAnimationVC */,
 				40263F541CBA82EC00D07F00 /* HomeTableViewController.h */,
 				40263F551CBA82EC00D07F00 /* HomeTableViewController.m */,
 			);
@@ -222,6 +222,48 @@
 				40263F501CBA801B00D07F00 /* PGCardTableViewCell.m */,
 			);
 			name = CustomView;
+			sourceTree = "<group>";
+		};
+		40263F9A1CBB746C00D07F00 /* CABasicAnimationVC */ = {
+			isa = PBXGroup;
+			children = (
+				40263F351CBA6AEF00D07F00 /* ShadowViewController.h */,
+				40263F361CBA6AEF00D07F00 /* ShadowViewController.m */,
+				40263F3B1CBA73E900D07F00 /* TransformViewController.h */,
+				40263F3C1CBA73E900D07F00 /* TransformViewController.m */,
+				40263F411CBA78CB00D07F00 /* MaskAnimationViewController.h */,
+				40263F421CBA78CB00D07F00 /* MaskAnimationViewController.m */,
+				40263F9D1CBB74B000D07F00 /* FillModeViewController.h */,
+				40263F9E1CBB74B000D07F00 /* FillModeViewController.m */,
+				40263FA01CBB802100D07F00 /* PathAnimationViewController.h */,
+				40263FA11CBB802100D07F00 /* PathAnimationViewController.m */,
+			);
+			name = CABasicAnimationVC;
+			sourceTree = "<group>";
+		};
+		40263F9B1CBB748500D07F00 /* CAGroupAninaitonVC */ = {
+			isa = PBXGroup;
+			children = (
+				40263F481CBA7FA300D07F00 /* SequenceAnimationViewController.h */,
+				40263F491CBA7FA300D07F00 /* SequenceAnimationViewController.m */,
+			);
+			name = CAGroupAninaitonVC;
+			sourceTree = "<group>";
+		};
+		40263F9C1CBB748E00D07F00 /* AdvancedAnimationSample */ = {
+			isa = PBXGroup;
+			children = (
+				40263F4B1CBA7FEB00D07F00 /* CellAnimationViewController.h */,
+				40263F4C1CBA7FEB00D07F00 /* CellAnimationViewController.m */,
+			);
+			name = AdvancedAnimationSample;
+			sourceTree = "<group>";
+		};
+		40263FA31CBB864900D07F00 /* CAKeyframeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CAKeyframeAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40263FA21CBB802100D07F00 /* PathAnimationViewController.m in Sources */,
 				40263F511CBA801B00D07F00 /* PGCardTableViewCell.m in Sources */,
 				40263F3D1CBA73E900D07F00 /* TransformViewController.m in Sources */,
 				40263F431CBA78CB00D07F00 /* MaskAnimationViewController.m in Sources */,
@@ -365,6 +408,7 @@
 				40263F331CBA67B100D07F00 /* CABasicAnimationDemo.m in Sources */,
 				40263F4A1CBA7FA300D07F00 /* SequenceAnimationViewController.m in Sources */,
 				40263F021CBA626200D07F00 /* AppDelegate.m in Sources */,
+				40263F9F1CBB74B000D07F00 /* FillModeViewController.m in Sources */,
 				40263F371CBA6AEF00D07F00 /* ShadowViewController.m in Sources */,
 				40263F4D1CBA7FEB00D07F00 /* CellAnimationViewController.m in Sources */,
 				40263EFF1CBA626200D07F00 /* main.m in Sources */,
@@ -594,6 +638,7 @@
 				40263F291CBA626200D07F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40263F2A1CBA626200D07F00 /* Build configuration list for PBXNativeTarget "iOSAnimationTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +647,7 @@
 				40263F2C1CBA626200D07F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40263F2D1CBA626200D07F00 /* Build configuration list for PBXNativeTarget "iOSAnimationTutorialUITests" */ = {
 			isa = XCConfigurationList;
@@ -610,6 +656,7 @@
 				40263F2F1CBA626200D07F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
