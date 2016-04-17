@@ -22,13 +22,10 @@
     [super viewDidLoad];
 
     isShowAnimation = YES;
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -51,7 +48,7 @@
     if (isShowAnimation) {
         PGCardTableViewCell *cardCell = (PGCardTableViewCell *)cell;
         [cardCell startAnimationWithDelay:initialDelay + ((indexPath.row) * stutter)];
-        if (indexPath.row == 10) {
+        if (indexPath.row == 8) {
             isShowAnimation = NO;
         }
     }

@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PGCardTableViewCell : UITableViewCell
+/**  cell的图片控件  */
 @property (weak, nonatomic) IBOutlet UIImageView *cardView;
+
 - (void)startAnimationWithDelay:(CGFloat)delayTime;
+
 @end
